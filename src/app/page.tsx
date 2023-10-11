@@ -1,9 +1,6 @@
-import Image from "next/image";
-import { useSession, signOut } from "next-auth/react";
-import { redirect } from "next/navigation";
-import { GetServerSideProps } from "next";
-import { getServerSession } from "next-auth";
 import SignOutButton from "@/components/signout/button";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 export default async function Home() {
   const session = await getServerSession();
   const user = session?.user;
