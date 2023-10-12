@@ -18,7 +18,7 @@ export default function SignInForm() {
         email,
         password,
         redirect: true,
-        callbackUrl: "/",
+        callbackUrl: "/admin",
       });
     } catch (error) {
       console.log(error);
