@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${inter.className} h-full bg-slate-50`}>
         {children}
+        <ToastContainer />
       </body>
-      <ToastContainer />
     </html>
   );
 }
